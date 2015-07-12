@@ -32,7 +32,7 @@ power_df2$datetime <- strptime(paste(power_df2$Date, power_df2$Time, sep = " "),
 par(mfrow = c(2, 2))
 
 ## plot 1,1
-plot(power_df2$datetime, power_df2$Global_active_power, ylab="Global Active Power (kilowatts)", xlab="", type="l")
+plot(power_df2$datetime, power_df2$Global_active_power, ylab="Global Active Power", xlab="", type="l")
 
 ## plot 1,2
 plot(power_df2$datetime, power_df2$Voltage, ylab="Voltage", xlab="datetime", type="l")
